@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+    
+    font-family: monospace;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: #490e80;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+main{
+    width: 40vw;
+    background: #fef;
+    border:.8rem solid #380b63;
+    border-radius: 1rem;
+    padding: 5rem;
+    margin: 2rem;
+    text-align: center;
+}
+
+h2{
+    font-size: 2.5rem;
+    margin: 1rem;
+}
+h3{
+    font-size: 3rem;
+}
+h4{
+    font-size: 2.5rem;
+}
+p{
+    font-size: 2.5rem;
+}
+img{
+    width: 90%;
+    max-height: 22rem;
+    height: auto;
+    margin: 2rem 0;
+}
+.btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    margin: 2rem 0rem;
+}
+button{
+    margin: 1rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    font-size: 2.4rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #490e80;
+    color: #fef;
+    text-shadow: rgba(0,0,0,.25) 0 .3rem .8rem;
+    user-select: none;
+    transition:all .5s linear;
+    min-width: 25rem;
+}
+button:hover{
+    background-color: #380b63;
+    box-shadow: 0 .2rem 3rem rgba(80,63,205,.45);
+}
+
+/* game area styling */
+
+#gameArea{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#gameArea button{
+    margin: 2rem 0;
+}
+#gameArea input {
+    min-width: 25rem;
+    background: transparent;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    font-size: 2rem;
+    margin: 3rem 0 5rem 0;
+    border-radius: .5rem;
+    border: 0.1rem solid #aaa;
+    outline: none;
+}
+.gameStats{
+    text-align: left;
+}
+.info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4rem;
+    font-weight: 700;
+}
+.info span{
+    font-size: 1.8rem;
+    color: #ff0511;
+}
+
+@media (max-width:1500px){
+    main{
+        width: 60vw;
+    }
+}
+@media (max-width:1200px){
+    main{
+        width: 70vw;
+    }
+}
+@media (max-width:768px){
+    main{
+        width: 80vw;
+    }
+    .info{
+        flex-direction: column;
+        font-weight: 700;
+    }
+    .info p{
+        margin-bottom: 1rem;
+    }
+}
+@media (max-width:500px){
+    main{
+        width: 90vw;
+    }
+}
+@media (max-width:300px){
+    :root{
+        font-size: 50%;
+    }
+}
